@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+
+.cmdenv-log
+
+src/Makefile
+src/dsme_lora
+out/
+simulations/.qtenvrc
+simulations/results

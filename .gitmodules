@@ -1,0 +1,9 @@
+[submodule "flora"]
+	path = flora
+	url = git@github.com:inetrg/flora.git
+[submodule "inet"]
+	path = inet
+	url = git@github.com:inetrg/inet.git
+[submodule "src/openDSME"]
+	path = src/openDSME
+	url = git@github.com:inetrg/openDSME.git
