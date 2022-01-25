@@ -28,8 +28,10 @@ make -C flora makefiles-static-lib
 make -C flora -j4
 ```
 
-6. Run the simulation with:
+6. Compile and run the simulation with:
 ```
+make makefiles
+make all
 make run
 ```
 
