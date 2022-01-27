@@ -32,6 +32,8 @@ simple DSME extends MacProtocolBase like IMacProtocol
 
         int superframeOrder = default(3);			// 4 bits
         int multiSuperframeOrder = default(5);		// 3 bits
+
+        // There seems to be a bug in OpenDSME with default order < 6...
         int beaconOrder = default(7);				// 4 bits
 
         int finalCAPSlot = default(8);				// 4 bits
