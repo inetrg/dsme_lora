@@ -49,6 +49,8 @@ simsignal_t DSMEPlatform::ackSentDown;
 simsignal_t DSMEPlatform::uncorruptedFrameReceived;
 simsignal_t DSMEPlatform::corruptedFrameReceived;
 simsignal_t DSMEPlatform::gtsChange;
+simsignal_t DSMEPlatform::ackTransSuccess;
+simsignal_t DSMEPlatform::ackTransAttempts;
 simsignal_t DSMEPlatform::queueLength;
 simsignal_t DSMEPlatform::packetsTXPerSlot;
 simsignal_t DSMEPlatform::packetsRXPerSlot;
@@ -162,6 +164,8 @@ DSMEPlatform::DSMEPlatform()
     packetsTXPerSlot = registerSignal("packetsTXPerSlot");
     packetsRXPerSlot = registerSignal("packetsRXPerSlot");
     commandFrameDwellTime = registerSignal("commandFrameDwellTime");
+    ackTransSuccess = registerSignal("ackTransSuccess");
+    ackTransAttempts = registerSignal("ackTransAttempts");
 }
 
 DSMEPlatform::~DSMEPlatform() {
@@ -1001,7 +1005,7 @@ void DSMEPlatform::initialize(int stage) {
         radioModule->subscribe(IRadio::receptionStateChangedSignal, this);
         radio = check_and_cast<IRadio*>(radioModule);
 
-        symbolDuration = SimTime(1024, SIMTIME_US);
+        symbolDuration = SimTime(1000, SIMTIME_US);
         timer = new cMessage();
         cfpTimer = new cMessage();
         ccaTimer = new cMessage();
@@ -1182,8 +1186,8 @@ void DSMEPlatform::handleUpperPacket(inet::Packet* packet) {
         //params.gtsTx = par("gtsTx");
         //auto ccnsim_tag = packet->getTag<ccnSimDSMEtags>();
         //chunk = ccnsim_tag->getChunk();
-        params.gtsTx = !dst.isBroadcast();
-        params.ackTx = false;
+        params.gtsTx = !dst.isBroadcast() && par("gtsTx");
+        params.ackTx = par("ackReq");
         params.indirectTx = false;
         params.ranging = NON_RANGING;
         params.uwbPreambleSymbolRepetitions = 0;
@@ -1685,6 +1689,12 @@ std::string DSMEPlatform::getSequenceChartInfo(IDSMEMessage* msg, bool outgoing)
     return ss.str();
 }
 
+void DSMEPlatform::signalAckedTransmissionResult(bool success, uint8_t transmissionAttempts, IEEE802154MacAddress receiver)
+{
+    emit(ackTransSuccess, (bool) success);
+    emit(ackTransAttempts, (int) transmissionAttempts);
+}
+
 void DSMEPlatform::signalGTSChange(bool deallocation, IEEE802154MacAddress counterpart) {
     if(deallocation) slots--;
     else slots++;
@@ -1755,6 +1765,13 @@ void DSMEPlatform::handleSelfMessage(cMessage* msg) {
         /* HACK: The LoRa Radio uses BUSY instead of IDLE */
         bool isIdle = (radio->getReceptionState() == IRadio::RECEPTION_STATE_BUSY) && channelInactive;
         LOG_DEBUG("CCA isIdle " << isIdle);
+        if (!isIdle) {
+            double CADEff = par("CADEff");
+            double upper_bound = UINT16_MAX * CADEff;
+            if (getRandom() > upper_bound) {
+                isIdle = true;
+            }
+        }
         dsme->dispatchCCAResult(isIdle);
     } else if(msg == cfpTimer) {
         dsme->handleStartOfCFP();

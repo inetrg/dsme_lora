@@ -172,6 +172,8 @@ public:
 
     virtual void signalPacketsRXPerSlot(uint32_t packets);
 
+    virtual void signalAckedTransmissionResult(bool success, uint8_t transmissionAttempts, IEEE802154MacAddress receiver) override;
+
     void startAssociation();
 
     void startScan();
@@ -248,6 +250,8 @@ public:
     static omnetpp::simsignal_t uncorruptedFrameReceived;
     static omnetpp::simsignal_t corruptedFrameReceived;
     static omnetpp::simsignal_t gtsChange;
+    static omnetpp::simsignal_t ackTransSuccess;
+    static omnetpp::simsignal_t ackTransAttempts;
     static omnetpp::simsignal_t queueLength;
     static omnetpp::simsignal_t packetsTXPerSlot;
     static omnetpp::simsignal_t packetsRXPerSlot;

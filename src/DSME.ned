@@ -22,6 +22,7 @@ simple DSME extends MacProtocolBase like IMacProtocol
         bool isPANCoordinator = default(false);
         bool isCoordinator = default(false);
         double isCoordinatorProbability = default(0.5);
+        double CADEff = default(0);
 
         // aMaxPHYPacketSize = 127 Octets (802.15.4-2006, page 45)
         // aMinMPDUOverhead = 9 Octets (802.15.4-2006, page 159)
@@ -37,6 +38,8 @@ simple DSME extends MacProtocolBase like IMacProtocol
         int beaconOrder = default(7);				// 4 bits
 
         int finalCAPSlot = default(8);				// 4 bits
+
+        bool ackReq = default(false);
 
         // Scheduling
         string scheduling = default("TPS");
@@ -89,6 +92,8 @@ simple DSME extends MacProtocolBase like IMacProtocol
         @signal[packetsTXPerSlot](type=long);
         @signal[packetsRXPerSlot](type=long);
         @signal[commandFrameDwellTime](type=long);
+        @signal[ackTransSuccess](type=bool);
+        @signal[ackTransAttempts](type=long);
 
         @statistic[unicastDataSentDown](title="unicast packet sent down of type DATA"; source=unicastDataSentDown; record=count; interpolationmode=none);
         @statistic[broadDataSentDown](title="broadcast packet sent down of type DATA"; source=broadcastDataSentDown; record=count; interpolationmode=none);
@@ -99,6 +104,8 @@ simple DSME extends MacProtocolBase like IMacProtocol
         @statistic[packetsTXPerSlot](title="Length of the neighbor queue"; source=packetsTXPerSlot; record=min,mean,max,vector; interpolationmode=none);
         @statistic[packetsRXPerSlot](title="Length of the neighbor queue"; source=packetsRXPerSlot; record=min,mean,max,vector; interpolationmode=none);
         @statistic[commandFrameDwellTime](title="Dwell time for command frames"; source=commandFrameDwellTime; record=min,mean,max; interpolationmode=none);
+        @statistic[ackTransSuccess](title="Success in ACK Transmission"; source=ackTransSuccess; record=min,mean,max,vector; interpolationmode=none);
+        @statistic[ackTransAttempts](title="Success in ACK Transmission"; source=ackTransAttempts; record=min,mean,max,vector; interpolationmode=none);
 
         @class(::dsme::DSMEPlatform);
 }
