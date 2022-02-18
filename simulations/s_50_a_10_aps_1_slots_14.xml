@@ -1,0 +1,223 @@
+<?xml version="1.0" ?>
+<root>
+	<node id="1">
+		<slot superframeID="0" slotID="3" channelID="0" direction="0" address="52"/>
+	</node>
+	<node id="2">
+		<slot superframeID="0" slotID="5" channelID="0" direction="0" address="54"/>
+	</node>
+	<node id="3">
+		<slot superframeID="1" slotID="9" channelID="0" direction="0" address="51"/>
+	</node>
+	<node id="4">
+		<slot superframeID="0" slotID="6" channelID="0" direction="0" address="55"/>
+	</node>
+	<node id="5">
+		<slot superframeID="0" slotID="6" channelID="1" direction="0" address="59"/>
+	</node>
+	<node id="6">
+		<slot superframeID="0" slotID="2" channelID="0" direction="0" address="56"/>
+	</node>
+	<node id="7">
+		<slot superframeID="0" slotID="1" channelID="0" direction="0" address="56"/>
+	</node>
+	<node id="8">
+		<slot superframeID="0" slotID="6" channelID="2" direction="0" address="54"/>
+	</node>
+	<node id="9">
+		<slot superframeID="1" slotID="11" channelID="0" direction="0" address="57"/>
+	</node>
+	<node id="10">
+		<slot superframeID="1" slotID="9" channelID="1" direction="0" address="58"/>
+	</node>
+	<node id="11">
+		<slot superframeID="1" slotID="9" channelID="2" direction="0" address="52"/>
+	</node>
+	<node id="12">
+		<slot superframeID="1" slotID="13" channelID="0" direction="0" address="51"/>
+	</node>
+	<node id="13">
+		<slot superframeID="0" slotID="6" channelID="3" direction="0" address="58"/>
+	</node>
+	<node id="14">
+		<slot superframeID="0" slotID="2" channelID="1" direction="0" address="58"/>
+	</node>
+	<node id="15">
+		<slot superframeID="1" slotID="10" channelID="0" direction="0" address="55"/>
+	</node>
+	<node id="16">
+		<slot superframeID="1" slotID="13" channelID="1" direction="0" address="54"/>
+	</node>
+	<node id="17">
+		<slot superframeID="0" slotID="5" channelID="1" direction="0" address="58"/>
+	</node>
+	<node id="18">
+		<slot superframeID="1" slotID="8" channelID="0" direction="0" address="57"/>
+	</node>
+	<node id="19">
+		<slot superframeID="0" slotID="4" channelID="0" direction="0" address="57"/>
+	</node>
+	<node id="20">
+		<slot superframeID="1" slotID="13" channelID="2" direction="0" address="57"/>
+	</node>
+	<node id="21">
+		<slot superframeID="1" slotID="14" channelID="0" direction="0" address="53"/>
+	</node>
+	<node id="22">
+		<slot superframeID="0" slotID="6" channelID="4" direction="0" address="56"/>
+	</node>
+	<node id="23">
+		<slot superframeID="0" slotID="3" channelID="1" direction="0" address="60"/>
+	</node>
+	<node id="24">
+		<slot superframeID="0" slotID="5" channelID="2" direction="0" address="57"/>
+	</node>
+	<node id="25">
+		<slot superframeID="1" slotID="12" channelID="0" direction="0" address="53"/>
+	</node>
+	<node id="26">
+		<slot superframeID="1" slotID="13" channelID="3" direction="0" address="58"/>
+	</node>
+	<node id="27">
+		<slot superframeID="0" slotID="2" channelID="2" direction="0" address="57"/>
+	</node>
+	<node id="28">
+		<slot superframeID="1" slotID="14" channelID="1" direction="0" address="57"/>
+	</node>
+	<node id="29">
+		<slot superframeID="0" slotID="2" channelID="3" direction="0" address="54"/>
+	</node>
+	<node id="30">
+		<slot superframeID="0" slotID="1" channelID="1" direction="0" address="54"/>
+	</node>
+	<node id="31">
+		<slot superframeID="1" slotID="10" channelID="1" direction="0" address="59"/>
+	</node>
+	<node id="32">
+		<slot superframeID="1" slotID="10" channelID="2" direction="0" address="51"/>
+	</node>
+	<node id="33">
+		<slot superframeID="0" slotID="3" channelID="2" direction="0" address="57"/>
+	</node>
+	<node id="34">
+		<slot superframeID="0" slotID="1" channelID="2" direction="0" address="58"/>
+	</node>
+	<node id="35">
+		<slot superframeID="1" slotID="11" channelID="1" direction="0" address="60"/>
+	</node>
+	<node id="36">
+		<slot superframeID="1" slotID="12" channelID="1" direction="0" address="60"/>
+	</node>
+	<node id="37">
+		<slot superframeID="0" slotID="3" channelID="3" direction="0" address="51"/>
+	</node>
+	<node id="38">
+		<slot superframeID="0" slotID="2" channelID="4" direction="0" address="60"/>
+	</node>
+	<node id="39">
+		<slot superframeID="1" slotID="13" channelID="4" direction="0" address="53"/>
+	</node>
+	<node id="40">
+		<slot superframeID="0" slotID="1" channelID="3" direction="0" address="51"/>
+	</node>
+	<node id="41">
+		<slot superframeID="1" slotID="8" channelID="1" direction="0" address="59"/>
+	</node>
+	<node id="42">
+		<slot superframeID="0" slotID="5" channelID="3" direction="0" address="52"/>
+	</node>
+	<node id="43">
+		<slot superframeID="1" slotID="12" channelID="2" direction="0" address="52"/>
+	</node>
+	<node id="44">
+		<slot superframeID="0" slotID="2" channelID="5" direction="0" address="52"/>
+	</node>
+	<node id="45">
+		<slot superframeID="1" slotID="9" channelID="3" direction="0" address="53"/>
+	</node>
+	<node id="46">
+		<slot superframeID="1" slotID="8" channelID="2" direction="0" address="56"/>
+	</node>
+	<node id="47">
+		<slot superframeID="0" slotID="3" channelID="4" direction="0" address="55"/>
+	</node>
+	<node id="48">
+		<slot superframeID="0" slotID="4" channelID="1" direction="0" address="54"/>
+	</node>
+	<node id="49">
+		<slot superframeID="1" slotID="8" channelID="3" direction="0" address="52"/>
+	</node>
+	<node id="50">
+		<slot superframeID="1" slotID="14" channelID="2" direction="0" address="60"/>
+	</node>
+	<node id="51">
+		<slot superframeID="0" slotID="1" channelID="3" direction="1" address="40"/>
+		<slot superframeID="0" slotID="3" channelID="3" direction="1" address="37"/>
+		<slot superframeID="1" slotID="9" channelID="0" direction="1" address="3"/>
+		<slot superframeID="1" slotID="10" channelID="2" direction="1" address="32"/>
+		<slot superframeID="1" slotID="13" channelID="0" direction="1" address="12"/>
+	</node>
+	<node id="52">
+		<slot superframeID="0" slotID="2" channelID="5" direction="1" address="44"/>
+		<slot superframeID="0" slotID="3" channelID="0" direction="1" address="1"/>
+		<slot superframeID="0" slotID="5" channelID="3" direction="1" address="42"/>
+		<slot superframeID="1" slotID="8" channelID="3" direction="1" address="49"/>
+		<slot superframeID="1" slotID="9" channelID="2" direction="1" address="11"/>
+		<slot superframeID="1" slotID="12" channelID="2" direction="1" address="43"/>
+	</node>
+	<node id="53">
+		<slot superframeID="1" slotID="9" channelID="3" direction="1" address="45"/>
+		<slot superframeID="1" slotID="12" channelID="0" direction="1" address="25"/>
+		<slot superframeID="1" slotID="13" channelID="4" direction="1" address="39"/>
+		<slot superframeID="1" slotID="14" channelID="0" direction="1" address="21"/>
+	</node>
+	<node id="54">
+		<slot superframeID="0" slotID="1" channelID="1" direction="1" address="30"/>
+		<slot superframeID="0" slotID="2" channelID="3" direction="1" address="29"/>
+		<slot superframeID="0" slotID="4" channelID="1" direction="1" address="48"/>
+		<slot superframeID="0" slotID="5" channelID="0" direction="1" address="2"/>
+		<slot superframeID="0" slotID="6" channelID="2" direction="1" address="8"/>
+		<slot superframeID="1" slotID="13" channelID="1" direction="1" address="16"/>
+	</node>
+	<node id="55">
+		<slot superframeID="0" slotID="3" channelID="4" direction="1" address="47"/>
+		<slot superframeID="0" slotID="6" channelID="0" direction="1" address="4"/>
+		<slot superframeID="1" slotID="10" channelID="0" direction="1" address="15"/>
+	</node>
+	<node id="56">
+		<slot superframeID="0" slotID="1" channelID="0" direction="1" address="7"/>
+		<slot superframeID="0" slotID="2" channelID="0" direction="1" address="6"/>
+		<slot superframeID="0" slotID="6" channelID="4" direction="1" address="22"/>
+		<slot superframeID="1" slotID="8" channelID="2" direction="1" address="46"/>
+	</node>
+	<node id="57">
+		<slot superframeID="0" slotID="2" channelID="2" direction="1" address="27"/>
+		<slot superframeID="0" slotID="3" channelID="2" direction="1" address="33"/>
+		<slot superframeID="0" slotID="4" channelID="0" direction="1" address="19"/>
+		<slot superframeID="0" slotID="5" channelID="2" direction="1" address="24"/>
+		<slot superframeID="1" slotID="8" channelID="0" direction="1" address="18"/>
+		<slot superframeID="1" slotID="11" channelID="0" direction="1" address="9"/>
+		<slot superframeID="1" slotID="13" channelID="2" direction="1" address="20"/>
+		<slot superframeID="1" slotID="14" channelID="1" direction="1" address="28"/>
+	</node>
+	<node id="58">
+		<slot superframeID="0" slotID="1" channelID="2" direction="1" address="34"/>
+		<slot superframeID="0" slotID="2" channelID="1" direction="1" address="14"/>
+		<slot superframeID="0" slotID="5" channelID="1" direction="1" address="17"/>
+		<slot superframeID="0" slotID="6" channelID="3" direction="1" address="13"/>
+		<slot superframeID="1" slotID="9" channelID="1" direction="1" address="10"/>
+		<slot superframeID="1" slotID="13" channelID="3" direction="1" address="26"/>
+	</node>
+	<node id="59">
+		<slot superframeID="0" slotID="6" channelID="1" direction="1" address="5"/>
+		<slot superframeID="1" slotID="8" channelID="1" direction="1" address="41"/>
+		<slot superframeID="1" slotID="10" channelID="1" direction="1" address="31"/>
+	</node>
+	<node id="60">
+		<slot superframeID="0" slotID="2" channelID="4" direction="1" address="38"/>
+		<slot superframeID="0" slotID="3" channelID="1" direction="1" address="23"/>
+		<slot superframeID="1" slotID="11" channelID="1" direction="1" address="35"/>
+		<slot superframeID="1" slotID="12" channelID="1" direction="1" address="36"/>
+		<slot superframeID="1" slotID="14" channelID="2" direction="1" address="50"/>
+	</node>
+</root>
