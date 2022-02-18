@@ -10,7 +10,6 @@ simple DSMELoRa extends DSME
     @signal[rxSuperframeID](type=unsigned int);
     @signal[rxSlotID](type=unsigned int);
     @statistic[sentL2CCNFrame](source=sentL2CCNFrame; record=count, vector);
-    macCapReduction = true;
     bool gtsTx = default(false);
     bool gtsRx = default(false);
     @class(dsme::DSMEPlatform);
