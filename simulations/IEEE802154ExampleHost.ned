@@ -60,7 +60,7 @@ module IEEE802154ExampleHost extends WirelessHost
 				positionByteLength = 2 B; // assumes a 3D coordinate can be specified in 6 byte
                 beaconInterval = 1250s;
                 maxJitter = 5s;
-                neighborValidityInterval = 30000s;
+                neighborValidityInterval = 80000s;
         }
 
         trafficgen: PRRTrafGen {
